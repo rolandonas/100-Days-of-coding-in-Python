@@ -215,51 +215,156 @@
 #  print(f"Your score is {love_score}")
 
 #Excercise Treasure hurt
-print('''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
-|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/[TomekK]
-*******************************************************************************
-''')
-print("Welcome to Roland Tresure Island \nYour Mission is to find a treasure \nGoodluck!!!")
-choice_1 = input("you are at a crossroad, Where would you go Left or Right. Type Left or Right?").lower()
-if choice_1 == "left":
-    print("Congratulations!!!! Now we move to the next stage!!!")
-    choice_2 = input("you are in front of a lake what would you do? swim or wait?").lower()
-    if choice_2 == "wait":
-        print("Congratulations!!!! Now we move to the next stage!!! ")
-    else:
-        print("Game over you have been eaten by crocodies in the lake")
+# print('''
+# *******************************************************************************
+#           |                   |                  |                     |
+#  _________|________________.=""_;=.______________|_____________________|_______
+# |                   |  ,-"_,=""     `"=.|                  |
+# |___________________|__"=._o`"-._        `"=.______________|___________________
+#           |                `"=._o`"=._      _`"=._                     |
+#  _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+# |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+# |___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+#           |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+#  _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+# |                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+# |___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+# ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+# /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+# ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+# /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+# ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+# /______/______/______/______/______/______/______/______/______/______/[TomekK]
+# *******************************************************************************
+# ''')
+# print("Welcome to Roland Tresure Island \nYour Mission is to find a treasure \nGoodluck!!!")
+# choice_1 = input("you are at a crossroad, Where would you go Left or Right. Type Left or Right?").lower()
+# if choice_1 == "left":
+#     print("Congratulations!!!! Now we move to the next stage!!!")
+#     choice_2 = input("you are in front of a lake what would you do? swim or wait?").lower()
+#     if choice_2 == "wait":
+#         print("Congratulations!!!! Now we move to the next stage!!! ")
+#     else:
+#         print("Game over you have been eaten by crocodies in the lake")
+#
+#     choice_3 = input("which door would you enter Red, Blue or Yellow").lower()
+#     if choice_3 == "red":
+#         print("you just entered a room of fire ")
+#     elif choice_3 == "blue":
+#         print("you have been eaten by a beast")
+#     elif choice_3 == "yellow":
+#         print("You Win")
+#     else:
+#         print("game over ")
+#
+# else:
+#     print("Game over you fell inside a hole")
 
-    choice_3 = input("which door would you enter Red, Blue or Yellow").lower()
-    if choice_3 == "red":
-        print("you just entered a room of fire ")
-    elif choice_3 == "blue":
-        print("you have been eaten by a beast")
-    elif choice_3 == "yellow":
-        print("You Win")
-    else:
-        print("game over ")
+########## Day 4 ##########################
+#Randomisation and Python Lists
+import random
+# random_interger = random.randint(1,5)
+# print(random_interger)
 
-else:
-    print("Game over you fell inside a hole")
+# random_float = random.random()
+# print(random_float)
+#
+# love_score = random.randint(1, 100)
+# print(f"Your love score is {love_score}")
+#Excercise
+#Write your code below this line 👇
+#Hint: Remember to import the random module first. 🎲
+# import random
+#
+# random_side = random.randint(0,1)
+# if random_side == 1:
+#     print("Heads")
+# else:
+#     print("Tails")
 
+#list
+# states_of_america = ["Delaware", "Madison", "Tennesse", "Florida"]
+# print(states_of_america[1])
 
+import random
+# Split string method
+# names_string = input("Give me everybody's names, separated by a comma. ")
+# names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
 
+#Write your code below this line 👇
+# num_items = len(names)
+# random_choice = random.randint(0, num_items - 1)
+# person_who_will_pay = names[random_choice]
 
+# person_who_will_pay = random.choice(names) #this is an easier options to getting it done
+# print(person_who_will_pay + " is going to buy the meal today!")
+#Exercise Treasure map
+
+# 🚨 Don't change the code below 👇
+# row1 = ["⬜️","⬜️","⬜️"]
+# row2 = ["⬜️","⬜️","⬜️"]
+# row3 = ["⬜️","⬜️","⬜️"]
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+# position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+
+# horzontal = int(position[0]) #2
+# vertical = int(position[1]) #3
+#
+# map[vertical - 1] [horzontal - 1] = 'X'
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+# print(f"{row1}\n{row2}\n{row3}")
+#excercise
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+import random
+user_choice = input("what do you choose? Type 0 for rock, 1 for paper, 2 for scissors")
+
+computer_choice = random.randint(0,2)
+print(f"Computer chose {computer_choice}")
+
+if user_choice >= 3 or user_choice < 0:
+    print("You typed an invalid number, you lose!")
+elif user_choice == 0 and computer_choice == 2:
+    print("You win!")
+elif computer_choice == 0 and user_choice == 2:
+    print("You lose")
+elif computer_choice > user_choice:
+    print("You lose")
+elif user_choice > computer_choice:
+    print("You win")
+elif computer_choice == user_choice:
+    print("its a draw")
