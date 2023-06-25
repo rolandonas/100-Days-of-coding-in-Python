@@ -350,21 +350,137 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
+# import random
+# user_choice = input("what do you choose? Type 0 for rock, 1 for paper, 2 for scissors")
+#
+# computer_choice = random.randint(0,2)
+# print(f"Computer chose {computer_choice}")
+#
+# if user_choice >= 3 or user_choice < 0:
+#     print("You typed an invalid number, you lose!")
+# elif user_choice == 0 and computer_choice == 2:
+#     print("You win!")
+# elif computer_choice == 0 and user_choice == 2:
+#     print("You lose")
+# elif computer_choice > user_choice:
+#     print("You lose")
+# elif user_choice > computer_choice:
+#     print("You win")
+# elif computer_choice == user_choice:
+#     print("its a draw")
+
+############ Day 5 ####################333
+#loop
+# fruits = ["Apple", "Peach", "pear"]
+# for fruit in fruits:
+#     print(fruit)
+#     print(fruit + " pie")
+# print(fruits)
+
+#excercise
+# 🚨 Don't change the code below 👇
+# student_heights = input("Input a list of student heights ").split()
+# for n in range(0, len(student_heights)):
+#     student_heights[n] = int(student_heights[n])
+# print(student_heights)
+# # 🚨 Don't change the code above 👆
+#
+# sum = sum(student_heights)
+# average = len(student_heights)
+# result = sum / average
+# print(result)
+
+#excercise 2
+# 🚨 Don't change the code below 👇
+# student_scores = input("Input a list of student scores ").split()
+# for n in range(0, len(student_scores)):
+#   student_scores[n] = int(student_scores[n])
+# print(student_scores)
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+#print(max(student_scores)) # easy way to do this
+
+
+
+#Write your code below this row 👇
+# highest_score = 0
+# for score in student_scores:
+#     if score > highest_score:
+#         highest_score = score
+# print(f"The highest score in the class is {highest_score}")
+
+#loop range
+# for number in range(1,11, 3):
+#     print(number)
+# total = 0
+# for number in range(1,101):
+#     total += number
+#     print(total
+
+#excercise adding even number
+# total = 0
+# for number in range(2,101, 2):
+#     total += number
+# print(number)
+
+#excersise  FizzBuzz
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("fizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+##day 5 final assignment
+#password project
+
+#Hard Level - Order of characters randomised:
+#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 import random
-user_choice = input("what do you choose? Type 0 for rock, 1 for paper, 2 for scissors")
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-computer_choice = random.randint(0,2)
-print(f"Computer chose {computer_choice}")
+print("Welcome to the PyPassword Generator!")
+nr_letters = int(input("How many letters would you like in your password?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-if user_choice >= 3 or user_choice < 0:
-    print("You typed an invalid number, you lose!")
-elif user_choice == 0 and computer_choice == 2:
-    print("You win!")
-elif computer_choice == 0 and user_choice == 2:
-    print("You lose")
-elif computer_choice > user_choice:
-    print("You lose")
-elif user_choice > computer_choice:
-    print("You win")
-elif computer_choice == user_choice:
-    print("its a draw")
+#Eazy Level
+# password = ""
+
+# for char in range(1, nr_letters + 1):
+#   password += random.choice(letters)
+
+# for char in range(1, nr_symbols + 1):
+#   password += random.choice(symbols)
+
+# for char in range(1, nr_numbers + 1):
+#   password += random.choice(numbers)
+
+# print(password)
+
+#Hard Level
+password_list = []
+
+for char in range(1, nr_letters + 1):
+  password_list.append(random.choice(letters))
+
+for char in range(1, nr_symbols + 1):
+  password_list += random.choice(symbols)
+
+for char in range(1, nr_numbers + 1):
+  password_list += random.choice(numbers)
+
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
+
+password = ""
+for char in password_list:
+  password += char
+
+print(f"Your password is: {password}")
