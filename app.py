@@ -496,3 +496,6 @@ for intro in range(6):
 
 # indentation
 #while loop
+
+###### Day 7 ##############
+
