@@ -487,15 +487,227 @@ import random
 
 ####Day 6 ####
 # function
-def my_function():
-    print("hello world")
-    print("My name is roland Onabolujo")
-
-for intro in range(6):
-    my_function()
+# def my_function():
+#     print("hello world")
+#     print("My name is roland Onabolujo")
+#
+# for intro in range(6):
+#     my_function()
 
 # indentation
 #while loop
 
 ###### Day 7 ##############
+#Step 1
 
+# word_list = ["aardvark", "baboon", "camel"]
+#
+# #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
+#
+# import random
+# chosen_word = random.choice(word_list)
+#
+# #TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+#
+# guess = input("Guess a letter: ").lower()
+#
+# #TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+# for letter in chosen_word:
+#     if letter == guess:
+#         print("Right")
+#     else:
+#         print("Wrong")
+# #Step 3
+#
+# import random
+# word_list = ["aardvark", "baboon", "camel"]
+# chosen_word = random.choice(word_list)
+# word_length = len(chosen_word)
+#
+# #Testing code
+# print(f'Pssst, the solution is {chosen_word}.')
+#
+# #Create blanks
+# display = []
+# for _ in range(word_length):
+#     display += "_"
+#
+# #TODO-1: - Use a while loop to let the user guess again. The loop should only stop once the user has guessed all the letters in the chosen_word and 'display' has no more blanks ("_"). Then you can tell the user they've won.
+#
+# guess = input("Guess a letter: ").lower()
+#
+# #Check guessed letter
+# for position in range(word_length):
+#     letter = chosen_word[position]
+#     print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+#     if letter == guess:
+#         display[position] = letter
+#
+# print(display)
+#
+# #Step 3
+#
+# import random
+# word_list = ["aardvark", "baboon", "camel"]
+# chosen_word = random.choice(word_list)
+# word_length = len(chosen_word)
+#
+# #Testing code
+# print(f'Pssst, the solution is {chosen_word}.')
+#
+# #Create blanks
+# display = []
+# for _ in range(word_length):
+#     display += "_"
+#
+# #TODO-1: - Use a while loop to let the user guess again. The loop should only stop once the user has guessed all the letters in the chosen_word and 'display' has no more blanks ("_"). Then you can tell the user they've won.
+# end_of_game = False
+#
+# while not end_of_game:
+#     guess = input("Guess a letter: ").lower()
+#
+#     #Check guessed letter
+#     for position in range(word_length):
+#         letter = chosen_word[position]
+#         #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+#         if letter == guess:
+#             display[position] = letter
+#
+#     print(display)
+#
+#     #Check if there are no more "_" left in 'display'. Then all letters have been guessed.
+#     if "_" not in display:
+#         end_of_game = True
+#         print("You win.")
+#
+# #Step 4
+#
+# import random
+#
+# stages = ['''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#  / \  |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#  /    |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#       |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|   |
+#       |
+#       |
+# =========''', '''
+#   +---+
+#   |   |
+#   O   |
+#   |   |
+#       |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#       |
+#       |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#       |
+#       |
+#       |
+#       |
+# =========
+# ''']
+#
+# end_of_game = False
+# word_list = ["ardvark", "baboon", "camel"]
+# chosen_word = random.choice(word_list)
+# word_length = len(chosen_word)
+#
+# #TODO-1: - Create a variable called 'lives' to keep track of the number of lives left.
+# #Set 'lives' to equal 6.
+# lives = 6
+#
+# #Testing code
+# print(f'Pssst, the solution is {chosen_word}.')
+#
+# #Create blanks
+# display = []
+# for _ in range(word_length):
+#     display += "_"
+#
+# while not end_of_game:
+#     guess = input("Guess a letter: ").lower()
+#
+#     #Check guessed letter
+#     for position in range(word_length):
+#         letter = chosen_word[position]
+#        # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+#         if letter == guess:
+#             display[position] = letter
+#
+#     #TODO-2: - If guess is not a letter in the chosen_word,
+#     #Then reduce 'lives' by 1.
+#     #If lives goes down to 0 then the game should stop and it should print "You lose."
+#     if guess not in chosen_word:
+#         lives -= 1
+#         if lives == 0:
+#             end_of_game = True
+#             print("You lose.")
+#
+#     #Join all the elements in the list and turn it into a String.
+#     print(f"{' '.join(display)}")
+#
+#     #Check if user has got all letters.
+#     if "_" not in display:
+#         end_of_game = True
+#         print("You win.")
+#
+#     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
+#     print(stages[lives])
+
+###### Day 8 #################
+#functions with inputs
+# Review:
+# Create a function called greet().
+# Write 3 print statements inside the function.
+# Call the greet() function and run your code.
+# def greet():
+#     print("Hello Roland ")
+#     print("How do you do?")
+#     print("Isn't the weather nice today?")
+# greet()
+
+# def greet_with_name(name):
+#     print(f"Hello {name}")
+#     print(f"How do you do{name}")
+#
+# greet_with_name("Roland")
+## function with multiple inputs
+
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"what is it like in {location}")
+greet_with("Roland", "Madison")
